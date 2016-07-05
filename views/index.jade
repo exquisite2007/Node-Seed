@@ -2,7 +2,13 @@ doctype html
 html
 	head
 		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/site.css')
+		script(src='/javascripts/react.js')
+		script(src='/javascripts/react-dom.js')
+		script(src='/javascripts/gauge.js')
 	body
 		h1= title
 		p Welcome to #{title}
+		div(id="example")
+		canvas(id="speed")
+		script(src='/javascripts/test.js')
