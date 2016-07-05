@@ -85,8 +85,8 @@ window.onload = function () {
                 }
             },
             animation: {
-                delay: 10,
-                duration: 1500,
+                delay: 1000,
+                duration: 5000,
                 fn: 'linear'
             },
             updateValueOnAnimation: true
@@ -95,7 +95,7 @@ window.onload = function () {
         gaugeSpeed2.onready = function () {
             setInterval(function () {
                 gaugeSpeed2.setValue(Math.random() * (165 - 120) + 120);
-            }, 1500);
+            }, 5000);
         };
 
         gaugeSpeed2.draw();
